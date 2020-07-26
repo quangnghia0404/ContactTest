@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/listContactFragment">
+
+    <fragment
+        android:id="@+id/listContactFragment"
+        android:name="vn.edu.ntu.quangnghia.contacttest.ListContactFragment"
+        android:label="fragment_list_contact"
+        tools:layout="@layout/fragment_list_contact" >
+        <action
+            android:id="@+id/action_listContactFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="vn.edu.ntu.quangnghia.contacttest.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" />
+</navigation>
